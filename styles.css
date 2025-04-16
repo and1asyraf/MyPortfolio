@@ -297,6 +297,7 @@ section{
     font-weight: 500;
 } 
 
+/*
 .input-box{
     display: flex;
     flex-direction: column;
@@ -329,6 +330,98 @@ section{
      left: 10px;
      transform: translate(50%, -50%);
 }
+     */ 
+
+/* contact */ 
+
+.contact {
+    padding: 4rem 2rem;
+    background-color: var(--contact-bg);
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(to right, rgb(0, 157, 255), rgb(255, 0, 255));
+    background-clip: text;
+    color: transparent;
+}
+
+.contact p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #333; /* Black color for light mode */
+}
+
+.input-box {
+    max-width: 500px;
+    margin: auto;
+    padding: 2rem;
+    background-color: #fff; /* Light background color for light mode */
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(192, 13, 224, 0.2);
+}
+
+.input {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.input input {
+    width: 100%;
+    padding: 1rem 1rem 1rem 2.5rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #3b3b44;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    transition: background 0.3s ease;
+}
+
+.input input::placeholder {
+    background: linear-gradient(to right, rgb(255, 0, 255),rgb(0, 157, 255));
+    background-clip: text;
+    color: transparent;
+}
+
+.input input:focus {
+    background-color: #444452;
+    box-shadow: 0 0 0 2px #00bcd4;
+}
+
+.input i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ffffff;
+    pointer-events: none;
+    font-size: 1.2rem;
+}
+
+.contact button {
+    padding: 0.9rem 2.5rem;
+    background: linear-gradient(to right, rgb(0, 157, 255), rgb(255, 0, 255));
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 188, 212, 0.3);
+}
+
+.contact button:hover {
+    background: linear-gradient(to right, rgb(255, 0, 255),rgb(0, 157, 255));
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 188, 212, 0.4);
+}
+
 
 footer{
     bottom: 0;
@@ -358,6 +451,60 @@ footer ul li a{
     margin-top: 2rem;
     font-weight: 300;
 }  
+
+
+body.dark-mode {
+    background-color: #232025;
+    color: #F7E7CE;
+}
+
+/*dark mode styles*/
+
+.dark-mode .grid-card,
+.dark-mode .btn,
+.dark-mode .project-card {
+    background-color: #232025;
+    color: #F7E7CE;
+    border-color: #F7E7CE;
+} 
+
+.dark-mode a {
+    color: #CDB4DB;
+}
+
+.theme-toggle {
+    position: fixed;
+    top: 0.7rem;
+    right: -3rem;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1001;
+    color: #232025;
+}
+
+.theme-toggle i {
+    color: #232025; 
+    transition: color 0.3s ease;
+}
+
+body.dark-mode .theme-toggle i {
+    color: #F7E7CE; 
+}
+
+body.dark-mode .contact h2{
+    background: linear-gradient(to right, rgb(255, 0, 255),rgb(0, 157, 255));
+    background-clip: text;
+    color: transparent; /* Gradient text for dark mode */
+}
+
+body.dark-mode .contact p {
+    color: #fff; /* White color for dark mode */
+}
+
+body.dark-mode .input-box {
+    background-color: #232025; /* Dark background color for dark mode */
+    box-shadow: 0 0 15px rgba(7, 91, 217, 0.2); /* Optional light shadow for dark mode */
+}
 
 @media(max-width:1280px){
     header{
