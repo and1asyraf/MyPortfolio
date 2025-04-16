@@ -52,7 +52,7 @@ if (form) {
     form.addEventListener('submit', function (e) {
         e.preventDefault();
 
-        emailjs.sendForm('service_i2tphbp', 'service_i2tphbp', this)
+        emailjs.sendForm('service_i2tphbp', 'template_3qn2y18', this)
             .then(function (response) {
                 alert('Email sent successfully!');
                 form.reset(); // Optional: Reset form after submission
