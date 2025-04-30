@@ -563,7 +563,7 @@ body.dark-mode .input-box {
 @media(max-width:600px){
     header #menu-icon{
         display: block;
-    }
+    } 
     .nav-links{
         position: absolute;
         top: 100%;
